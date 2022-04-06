@@ -1,0 +1,35 @@
+ ˛∫æ   = ö  nhan61133258/DocClient  java/lang/Object <init> ()V Code
+  	   LineNumberTable LocalVariableTable this Lnhan61133258/DocClient; main ([Ljava/lang/String;)V  java/net/Socket  	localhost
+     (Ljava/lang/String;I)V	    java/lang/System   out Ljava/io/PrintStream;  K·∫øt n·ªëi th√†nh c√¥ng
+   " ! java/io/PrintStream # $ println (Ljava/lang/String;)V
+  & ' ( getInputStream ()Ljava/io/InputStream; * java/io/InputStreamReader
+ ) ,  - (Ljava/io/InputStream;)V / java/io/BufferedReader
+ . 1  2 (Ljava/io/Reader;)V
+  4 5 6 getOutputStream ()Ljava/io/OutputStream; 8 java/io/OutputStreamWriter
+ 7 :  ; (Ljava/io/OutputStream;)V = java/io/BufferedWriter
+ < ?  @ (Ljava/io/Writer;)V B java/util/Scanner	  D E F in Ljava/io/InputStream;
+ A , I 
+Client:
+   K L $ print
+ A N O P nextLine ()Ljava/lang/String; R java/lang/StringBuilder
+ T V U java/lang/String W X valueOf &(Ljava/lang/Object;)Ljava/lang/String;
+ Q Z  $ \ 
+
+ Q ^ _ ` append -(Ljava/lang/String;)Ljava/lang/StringBuilder;
+ Q b c P toString
+ < e f $ write
+ < h i  flush
+ . k l P readLine n Server:  p Bye
+ T r s t equals (Ljava/lang/Object;)Z
+  v w  close
+ y { z java/lang/Exception | P 
+getMessage args [Ljava/lang/String; socket Ljava/net/Socket; inReader Ljava/io/InputStreamReader; buffRead Ljava/io/BufferedReader; 
+osToClient Ljava/io/OutputStream; write2Client Ljava/io/OutputStreamWriter; 	buffWrite Ljava/io/BufferedWriter; sc Ljava/util/Scanner; chuoiGui Ljava/lang/String; 	chuoiNhan e Ljava/lang/Exception; StackMapTable ~ ï java/io/InputStream ó java/io/OutputStream 
+SourceFile DocClient.java !               /     *∑ ±    
+                    	      ·     Ωª Y'∑ L≤ ∂ +∂ %Mª )Y,∑ +Nª .Y-∑ 0:+∂ 3:ª 7Y∑ 9:ª <Y∑ >:ª AY≤ C∑ G:≤ H∂ J∂ M:	ª QY	∏ S∑ Y[∂ ]∂ a∂ d∂ g∂ j:
+≤ ª QYm∑ Y
+∂ ]∂ a∂ J	o∂ qôˇÆ+∂ uß L≤ +∂ x∂ J±    Æ ± y  
+   R           #  -  3  >  I  U  ]  d  }   Ç ! â " † # ™ % Æ ' ≤ ( º *    z    Ω } ~    °  Ä   î E F  # ã Å Ç  - Å É Ñ  3 { Ö Ü  > p á à  I e â ä  U Y ã å  d F ç é 	 â ! è é 
+ ≤ 
+ ê ë  í   2 ˇ U 	 ì  î ) . ñ 7 < A  ˇ [  ì  y
+  ò    ô
